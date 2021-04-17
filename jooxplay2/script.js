@@ -30,6 +30,7 @@ function searchMovie(){
                                     <audio controls>
     <source src="`+ movies.mp3_url +`" type="audio/mpeg">
 </audio>
+                                <p><a href="https://www.google.com/search?q=`+ movies.judul +`+lyric">Lyrics</a></p>
                                 </div>
                             </div>
                         </div>
