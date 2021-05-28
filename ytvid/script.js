@@ -7,7 +7,7 @@ function searchMovie(){
     $.ajax({
         // parameter object
         // mau ngambil data dari mana
-        url: 'https://api.codetabs.com/v1/proxy/?quest=http://api.lolhuman.xyz/api/ytsearch?apikey=erdwpehub28',
+        url: 'https://api.codetabs.com/v1/proxy/?quest=http://api.lolhuman.xyz/api/ytsearch?apikey=0873e2e728bfe1654f7b8d05',
         type: 'get',
         dataType: 'json',
         // menggunakan ajax bisa menyimpan datanya disini 'data:', bukan di url
@@ -28,7 +28,7 @@ function searchMovie(){
                                 <div class="card-body">
                                     <h5 class="card-title">`+ data.title +`</h5>
                                     <h6 class="card-subtitle mb-2 text-muted">`+ data.views +`</h6>
-                                    <a href="#" class="card-link see-detail" data-toggle="modal" data-target="#exampleModal" data-id="`+ data.videoId +`">See detail</a>
+                                    <a href="#" class="card-link see-detail" data-toggle="modal" data-target="#exampleModal" data-id="https://www.youtube.com/watch?v=`+ data.videoId +`">See detail</a>
                                 </div>
                             </div>
                         </div>
@@ -63,7 +63,7 @@ $('#video-list').on('click', '.see-detail', function(){
     // console.log($(this).data('id'));
     // maka jalankan ajax
     $.ajax({
-        url: 'https://api.codetabs.com/v1/proxy/?quest=https://api.zeks.xyz/api/ytmp4?apikey=apivinz',
+        url: 'https://api.codetabs.com/v1/proxy/?quest=https://api.zeks.xyz/api/ytmp4?apikey=mKB62s9WfiRYqqUJSzqpyH1rjlT',
         dataType: 'json',
         type: 'get',
         data: {
