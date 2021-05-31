@@ -7,7 +7,7 @@ function searchMovie(){
     $.ajax({
         // parameter object
         // mau ngambil data dari mana
-        url: 'https://api.codetabs.com/v1/proxy/?quest=https://api.zeks.xyz/api/igs?apikey=apivinz',
+        url: 'https://api.codetabs.com/v1/proxy/?quest=https://api.zeks.xyz/api/igs?apikey=mKB62s9WfiRYqqUJSzqpyH1rjlT',
         type: 'get',
         dataType: 'json',
         // menggunakan ajax bisa menyimpan datanya disini 'data:', bukan di url
@@ -24,18 +24,12 @@ function searchMovie(){
                 $('#video-list').append(`
                     <div class="col-md-3">
                             <div class="card mb-3">
-                                <video style="width:100%;"
-            controls
-            id="player">
-           
-            <source 
-            src="`+ data.url +`" 
-            />
                                 <div class="card-body">
-                                    <p><a href="`+ data.url +`">Download</a></p>
+                                    <p>Tipe File : `+ data.type +`</p>
+                                    <p><a href="`+ data.url +`">`+ data.url +`</a></p>
                                 </div>
                             </div>
-                        </div>
+                    </div>
                     `);
             })
 
